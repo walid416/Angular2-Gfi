@@ -1,0 +1,10 @@
+#menu{
+	background: #2980b9;
+}
+#menu a{
+	color: #fff;
+	text-transform: uppercase;
+}
+#menu .active>a{
+    background-color: #34495e;
+}

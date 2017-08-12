@@ -1,6 +1,6 @@
 import { browser, by, element } from 'protractor';
 
-export class BlogWalidPage {
+export class AngularGfiPage {
   navigateTo() {
     return browser.get('/');
   }

@@ -1,10 +1,10 @@
-import { BlogWalidPage } from './app.po';
+import { AngularGfiPage } from './app.po';
 
-describe('blog-walid App', () => {
-  let page: BlogWalidPage;
+describe('angular-gfi App', () => {
+  let page: AngularGfiPage;
 
   beforeEach(() => {
-    page = new BlogWalidPage();
+    page = new AngularGfiPage();
   });
 
   it('should display welcome message', () => {

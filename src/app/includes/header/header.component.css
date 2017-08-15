@@ -1,5 +1,7 @@
 #menu{
 	background: #2980b9;
+	border: 0;
+	border-radius:0;
 }
 #menu a{
 	color: #fff;

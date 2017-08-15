@@ -10,9 +10,10 @@ import { OffresComponent } from './pages/offres/offres.component';
 import { DemandesComponent } from './pages/demandes/demandes.component';
 import { DeposeAnnonceComponent } from './pages/depose-annonce/depose-annonce.component';
 import { MesAnnoncesComponent } from './pages/mes-annonces/mes-annonces.component';
+import { AcceuilComponent } from './pages/acceuil/acceuil.component';
 const routes: Routes = [
   { path: '', redirectTo: 'Acceuil', pathMatch: 'full' },
-  { path: 'Acceuil', component: AppComponent },
+  { path: 'Acceuil', component: AcceuilComponent },
   { path: 'Offres', component: OffresComponent },
   { path: 'Demances', component: DemandesComponent },
   { path: 'Demandes', component: DemandesComponent },
@@ -27,7 +28,8 @@ const routes: Routes = [
     OffresComponent,
     DemandesComponent,
     DeposeAnnonceComponent,
-    MesAnnoncesComponent
+    MesAnnoncesComponent,
+    AcceuilComponent
   ],
   imports: [
     BrowserModule, 

@@ -6,10 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-
+  color:string = 'red';
   constructor() { }
 
   ngOnInit() {
   }
+
+
+changeStyle($event){
+  this.color = $event.type == 'mouseover' ? 'yellow' : 'red';
+}
 
 }

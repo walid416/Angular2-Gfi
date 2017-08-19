@@ -11,6 +11,7 @@ import { DemandesComponent } from './pages/demandes/demandes.component';
 import { DeposeAnnonceComponent } from './pages/depose-annonce/depose-annonce.component';
 import { MesAnnoncesComponent } from './pages/mes-annonces/mes-annonces.component';
 import { AcceuilComponent } from './pages/acceuil/acceuil.component';
+import { ConnexionComponent } from './pages/connexion/connexion.component';
 const routes: Routes = [
   { path: '', redirectTo: 'Acceuil', pathMatch: 'full' },
   { path: 'Acceuil', component: AcceuilComponent },
@@ -18,7 +19,8 @@ const routes: Routes = [
   { path: 'Demances', component: DemandesComponent },
   { path: 'Demandes', component: DemandesComponent },
   { path: 'Deposer une annonce', component: DeposeAnnonceComponent },
-  { path: 'Mes annonces', component: MesAnnoncesComponent }
+  { path: 'Mes annonces', component: MesAnnoncesComponent },
+  { path: 'Connexion', component: ConnexionComponent }
 ];
 @NgModule({
   declarations: [
@@ -29,7 +31,8 @@ const routes: Routes = [
     DemandesComponent,
     DeposeAnnonceComponent,
     MesAnnoncesComponent,
-    AcceuilComponent
+    AcceuilComponent,
+    ConnexionComponent
   ],
   imports: [
     BrowserModule, 

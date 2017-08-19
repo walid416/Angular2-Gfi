@@ -1,0 +1,54 @@
+.foot-main
+{
+	padding:20px;
+	background:#434a54;
+}
+.foot-center
+{
+	margin:0 auto;
+	width:1100px;
+}
+.foot-center-news-tx1
+{
+	color:#fff;padding-left:20px;
+}
+.foot-center-news-form
+{
+	color:#000;margin:10px 0 0 20px;background:#fff;padding:5px 0;width:600px;
+}
+.foot-center-news-input
+{
+	float:left;margin-right:10px;
+}
+.foot-center-input
+{
+	padding:5px 10px;width:500px;border:0;outline:none;
+}
+.foot-center-menu-cont
+{
+	margin-top:20px;padding:20px 0 40px 20px;border-top:1px solid #656d78;color:#fff;
+}
+.foot-center-menu-cell
+{
+	float:left;margin-right:100px;
+}
+.foot-center-menu-title
+{
+	font-weight:bold;
+}
+.foot-center-menu-title-bar
+{
+	border-top:1px solid #fff;width:65px;margin-top:10px;
+}
+.foot-center-menu-text
+{
+	margin-top:15px;
+}
+.foot-bottom
+{
+	padding:10px;background:#656d78;
+}
+.foot-bottom-center
+{
+	margin:0 auto;width:1100px;color:#fff;padding:0 20px;text-align:center;
+}

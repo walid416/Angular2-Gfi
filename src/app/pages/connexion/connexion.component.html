@@ -1,0 +1,38 @@
+  <div class="container" id="container">
+
+      <!--
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      | Formulaire Connexion
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      !-->
+      <section class="section text-center bg-grey">
+
+        <div class="row">
+          <div class="col-12 offset-md-3 col-md-6 offset-lg-4 col-lg-4">
+
+            <div id="formulaireConnexion">
+              <input type="hidden" name="guestJetonCsrf" id="guestJetonCsrf" value="bcda2ebc1a0d562a6ac1e3950359f08fcf7d2b318a010d16e79a5b659e2f5cfd"/>
+
+              <div class="form-group">
+                <input type="email" class="form-control form-control-lg" placeholder="Email" name="userEmail" value="" id="userEmail" required="required"/>
+              </div>
+
+              <div class="form-group">
+                <input type="password" class="form-control form-control-lg" placeholder="Mot de passe" name="userPassword" id="userPassword" required="required"/>
+              </div>
+
+			  <div id="emplacementRecaptcha"></div>
+              <button class="btn btn-block btn-lg btn-success" id="boutonConnexion">Connexion</button>
+			  <script>onload();</script>
+            </div>
+			<div id="statutConnexion"></div>
+
+			<hr class="w-90">
+			<p class="text-center text-muted fs-13 mt-20">Pas de compte? <a href="/inscription">Inscrivez-vous gratuitement</a></p>
+			<p class="text-center text-muted fs-13 mt-20"><a href="/oubli">Mot de passe oublié</a></p>
+          </div>
+        </div>
+
+      </section>
+
+  </div>

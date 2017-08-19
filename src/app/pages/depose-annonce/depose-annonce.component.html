@@ -1,5 +1,53 @@
-  <div class="container" id="container">
-<p>
-  depose-annonce works!
-</p>
-  </div>
+<div class="container" id="container"><div class="row">
+    <div class="form-group ">
+        <label _ngcontent-c2="" class="h4" for="name">Categorie</label>
+        <select class="form-control" name="" id="found_site">
+                                <option>Company</option>
+                                <option>Friend</option>
+                                <option>Colleague</option>
+                                <option>Advertisement</option>
+                                <option>Google Search</option>
+                                <option>Online Article</option>
+                                <option value="other">Other</option>
+        </select>
+    </div>
+
+    <div class="form-group clearfix">
+        <label class=" h4 " for="Training">Vous êtes un *</label>
+        <div>
+            <label class="radio-inline" for="Training-0">
+                <input type="radio" name="Training" id="Training-0" value="yes" checked="checked">
+            Particulier
+            </label>
+            <label class="radio-inline" for="Training-1">
+                <input type="radio" name="Training" id="Training-1" value="no">
+            Professionnel    
+            </label>
+        </div>
+    </div>
+
+    <div class="form-group clearfix">
+        <label class=" h4 " for="Training">Type d'annonce</label>
+        <div>
+            <label class="radio-inline" for="Training-0">
+      <input type="radio" name="Training" id="Training-0" value="yes" checked="checked">
+      Offres
+    </label>
+            <label class="radio-inline" for="Training-1">
+      <input type="radio" name="Training" id="Training-1" value="no">
+       Demandes    
+    </label>
+        </div>
+    </div>
+    <div class="form-group clearfix">
+        <label for="name" class="h4">Titre de l'annonce</label>
+        <input type="text" class="form-control" id="name" placeholder="Enter name" required>
+    </div>
+    <div class="form-group clearfix">
+        <label for="message" class="h4 ">Texte D'annonce</label>
+        <textarea id="message" class="form-control" rows="5" placeholder="Enter your message" required></textarea>
+    </div>
+    <button type="submit" id="form-submit" class="btn btn-success btn-lg pull-right ">Submit</button>
+    <div id="msgSubmit" class="h3 text-center hidden">Message Submitted!</div>
+</div>
+</div>

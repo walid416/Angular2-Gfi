@@ -1,0 +1,71 @@
+<div class="container" id="container">	
+	<app-breadcrumb [data]="brdata"></app-breadcrumb>
+	<div style="float:left;width:700px;">
+		<div [hidden]="submitted">
+		<h3 style="padding:0;margin:0;">Nous contacter</h3>
+		<div style="margin:15px 0 20px 0;">
+			Vous avez un quelque chose à vendre ou à louer ? N'hésitez pas à nous contacter !<br/>
+			Nos conseillers répondent en moins de 24h à toutes vos demandes.
+		</div>
+		<form (ngSubmit)="onSubmit()" #heroForm="ngForm">
+			<div style="padding:25px;background:#F2F2F2;">
+				<div class="form-group">
+					<label for="name">Votre nom</label>
+					<input type="text" class="form-control" id="name" required [(ngModel)]="model.name" name="name" #name="ngModel">
+					<div [hidden]="name.valid || name.pristine" class="alert alert-danger">Nom non valide</div>
+				</div>
+				<div class="form-group">
+					<label for="sujet">Votre sujet</label>
+					<input type="text" class="form-control" id="sujet" [(ngModel)]="model.sujet" name="sujet">
+				</div>
+				<div class="form-group">
+					<label for="mail">Votre e-mail</label>
+					<input type="text" class="form-control" id="mail" required [(ngModel)]="model.mail" name="mail" #mail="ngModel">
+					<div [hidden]="mail.valid || mail.pristine" class="alert alert-danger">E-mail non valide</div>
+				</div>
+				<div class="form-group">
+					<label for="msg">Votre message</label>
+					<textarea id="msg" required [(ngModel)]="model.msg" name="msg" class="form-control" rows="8" cols="62" style="width: 100%;" #msg="ngModel"></textarea>					
+					<div [hidden]="msg.valid || msg.pristine" class="alert alert-danger">Message non valide</div>				
+				</div>
+				<button type="submit" class="btn btn-default" [disabled]="!heroForm.form.valid">Envoyer</button>
+			</div>
+		</form>
+		</div>
+		<div [hidden]="!submitted">
+			<h2>Informations envoyées:</h2>
+			<div class="row">
+				<div class="col-xs-3">Name</div> 
+				<div class="col-xs-9  pull-left">{{ model.name }}</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-3">Sujet</div>
+				<div class="col-xs-9 pull-left">{{ model.sujet }}</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-3">E-mail</div>
+				<div class="col-xs-9 pull-left">{{ model.mail }}</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-3">Message</div>
+				<div class="col-xs-9 pull-left">{{ model.msg }}</div>
+			</div>
+			<br>
+			<button class="btn btn-default" (click)="submitted=false">Modifier</button>
+		</div>
+	</div>
+	<div style="float:right;width:300px;padding:35px 0 0 0;">
+		<div style="padding:15px 20px;background:#2982C6;color:#fff;-webkit-border-top-left-radius: 5px;-webkit-border-top-right-radius: 5px;-moz-border-radius-topleft: 5px;-moz-border-radius-topright: 5px;border-top-left-radius: 5px;border-top-right-radius: 5px;">
+			<b>Nous contacter</b>
+		</div>
+		<div style="padding:0px 20px;color:#005ea8;border:1px solid #ccc;border-top:0;">
+			<div style="border-bottom:1px solid #ccc;padding:15px 0;">Notre philosophie</div>
+			<div style="border-bottom:1px solid #ccc;padding:15px 0;">Nos tarifs</div>
+			<div style="border-bottom:1px solid #ccc;padding:15px 0;">S'inscrire</div>
+			<div style="border-bottom:1px solid #ccc;padding:15px 0;">Aide</div>
+			<div style="border-bottom:1px solid #ccc;padding:15px 0;">Plan du site</div>
+			<div style="border-bottom:0px solid #ccc;padding:15px 0;">Questions réponses</div>
+		</div>
+	</div>
+	<div style="clear:both;"></div>
+</div>

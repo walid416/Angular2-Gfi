@@ -1,0 +1,15 @@
+<div style="border:3px solid #F0EFF5;padding:0px 10px;margin:10px 0 15px 0;font-size:12px;">
+	<div style="float:left;margin-right:7px;padding-top:3px;">
+		<span class="glyphicon glyphicon-home" aria-hidden="true" style="color:#000;"></span>
+	</div>
+	<div *ngFor="let brd of data">
+		<div style="float:left;margin-right:6px;padding-top:2px;">
+			<span class="glyphicon glyphicon-menu-right" aria-hidden="true" style="color:#0079FC;font-size:16px;"></span>
+		</div>
+		<div style="float:left;padding-top:3px;margin-right:6px;">
+			<a *ngIf="brd.url" routerLink="{{brd.url}}" style="color:#0079FC;text-decoration:none;">{{brd.text}}</a>
+			<span *ngIf="!(brd.url)" style="color:#ccc;">{{brd.text}}</span>
+		</div>
+	</div>
+	<div style="clear:both;"></div>
+</div>

@@ -7,9 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class QuiNousSommesComponent implements OnInit {
 
-  constructor() { }
+	constructor() { }
+  
+	public brdata = 
+	[	
+		{
+			'text': 'Qui sommes nous',
+			'url': ''
+		}
+	];
 
-  ngOnInit() {
-  }
+	ngOnInit() { }
 
 }
